@@ -1,0 +1,68 @@
+:root {
+    --white: white;
+    --offWhite: #f7f7f7;
+    --darkGrey: #6c6c6e;
+    --middleGrey: #999;
+    --red: #C1272D;
+    --green: #88A80D;
+}
+
+body {
+    font: 1rem/1.5 Poppins, Helvetica, Arial, "sans-serif";
+    box-sizing: border-box;
+    background-color: var(--offWhite);
+    color: var(--middleGrey);
+}
+
+#root {
+    display: inline-flex;
+    flex-wrap: wrap;
+    grid-gap: 1rem;
+    height: auto;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.assetContainer {
+    display: inline-grid;
+    place-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-areas: 
+        "symbol symbol"
+        "price price"
+        "delta delta"
+        "range range"
+        "vol vol";
+}
+
+.symbol, 
+.spotPricing, 
+.priceDelta, 
+.range {
+    display: flex;
+    place-content: center;
+}
+
+.symbol {
+    grid-area: symbol;
+}
+
+.spotPricing {
+    grid-area: price;    
+}
+
+.priceDelta {
+    grid-area: delta;
+}
+
+.range {
+    grid-area: range;
+}
+
+.volume {
+    display: grid;
+    place-content: center;
+    grid-area: vol;
+}

@@ -1,0 +1,82 @@
+.assetContainer {
+    box-shadow: 0 0.1rem 0.5rem var(--middleGrey);
+    padding: 0 2rem;
+    background-color: var(--white);
+    min-width: 30rem;
+    height: 20rem;
+    margin: 0.5rem;
+}
+
+.symbol {
+    width: auto;
+    height: auto;
+}
+
+.symbol img {
+    --size: 5rem;
+    
+    width: var(--size);
+    height: var(--size);
+}
+
+.tradingSymbol {
+    font-size: 2rem;
+    margin-right: 0.5rem;
+}
+
+.price {
+    font-weight: 200;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+}
+
+.spotPricing {
+    margin-top: 0.5rem;
+}
+
+.high {
+    margin-right: 0.5rem;
+}
+
+.low {
+    margin-left: 0.5rem;
+}
+
+.priceDelta,
+.range, 
+.volume {
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.priceDelta {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.priceDelta li {
+    display: inline-block;
+    margin: 0 0.25rem;
+}
+
+.tradingSymbol,
+.deltaNum, 
+.hLetter,
+.lLetter, 
+.volTitle {
+    font-weight: bold;
+    color: var(--darkGrey);
+}
+
+.volume {
+    text-align: center;
+}
+
+.volTitle {
+    margin-bottom: 0;
+}
+
+.volAmount {
+    margin: 0;
+}
